@@ -1,0 +1,172 @@
+/* styles.css - Clean, modern, and simple UI for profitpilot app */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+label {
+  display: block;
+  margin-top: 1.25rem;
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  margin-top: 1.75rem;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 2rem;
+  padding: 18px;
+  background-color: #e9f0ff;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  color: #004085;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#toggleListBtn {
+  margin-top: 2rem;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#toggleListBtn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+#savedEntriesContainer {
+  margin-top: 1.5rem;
+  display: none;
+}
+
+#savedEntriesTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#savedEntriesTable thead tr {
+  background-color: #007bff;
+  color: white;
+  font-weight: 700;
+}
+
+#savedEntriesTable th,
+#savedEntriesTable td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+#savedEntriesTable tbody tr:nth-child(even) {
+  background-color: #f8faff;
+}
+
+#clearEntriesBtn {
+  margin-top: 1rem;
+  padding: 10px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#clearEntriesBtn:hover {
+  background-color: #a71d2a;
+}
+
+/* New styles for product cost cards */
+
+.product-cost-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  gap: 12px;
+}
+
+.product-cost-card {
+  flex: 1;
+  padding: 16px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.product-cost-card:hover {
+  border-color: #007bff;
+  background-color: #e9f0ff;
+}
+
+.product-cost-card.selected {
+  border-color: #007bff;
+  background-color: #cce4ff;
+  color: #004085;
+}
